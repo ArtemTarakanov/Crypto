@@ -2,7 +2,7 @@ import {useState} from 'react'
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false);
     return(
-        <section className = "bg-[#1E1F25] h-30 flex items-center justify-around max-md:">
+        <section className = "bg-[#1E1F25] h-30 flex items-center justify-around max-md:h-20">
 
             <svg className="md:flex-none" width="150" height="24" viewBox="0 0 150 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.351562 7.47041C0.410156 7.26534 0.46875 7.06026 0.556641 6.88448C0.439453 7.06026 0.380859 7.26534 0.351562 7.47041ZM7.58789 1.55245C7.85156 1.52315 8.08594 1.52315 8.34961 1.52315C8.4082 1.52315 8.4668 1.52315 8.52539 1.52315C8.20312 1.49385 7.91016 1.49385 7.58789 1.55245ZM13.8574 3.57393C14.0625 3.77901 14.2969 3.95479 14.4727 4.18917C14.2969 3.95479 14.0918 3.74971 13.8574 3.57393Z" fill="#1B70F1"/>
@@ -49,11 +49,11 @@ export default function Header(){
             </button>
 
             {isOpen&&(
-                <div className = "absolute top-30 bg-[#1E1F25] w-full flex flex-col items-center justify-center px-4 gap-5 animate-fadeIn">
-                    <ul className = "flex flex-col items-center gap-3 font-source-sans-pro font-normal text-lg leading-7 text-[#ADB3BF] w-full md:hidden ">
+                <div className = "absolute top-20 bg-[#1E1F25] w-full flex flex-col items-center justify-center px-4 gap-5 animate-fadeIn z-1000">
+                    <ul className = "flex flex-col items-center gap-3 font-source-sans-pro font-normal text-lg leading-7 text-[#ADB3BF] w-full md:hidden mt-4">
                         <li>Market</li>
 
-                        <div className = "h-[0.2px] bg-gray-400 w-90"></div>
+                        <div className = "h-[0.2px] bg-gray-400 w-90 "></div>
 
                         <li>Trade</li>
 
