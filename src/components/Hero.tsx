@@ -2,7 +2,7 @@ import CurrencyTicker from './CurrencyTicker';
 
 export default function Hero(){
     return(
-        <section className = "h-190 max-md:h-auto max-md:min-h-screen bg-[#17191A] bg-[url('/images/bg.svg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-18 max-md:px-4 max-md:py-2 max-md:mb-5 max-md:h-full">
+        <section className = "h-190 max-md:h-auto max-md:min-h-screen bg-[#17191A] bg-[url('/images/bg.svg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-18 max-md:px-4 max-md:py-2 max-md:mb-5 max-md:h-auto">
             <div className = "flex flex-row max-md:flex-col items-center justify-center max-md:text-center max-md:gap-8">
 
                 {/*Текст слева*/}
