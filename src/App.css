@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 @keyframes fadeIn {
     from{
         opacity: 0;
@@ -27,3 +38,4 @@
 .float {
     animation: float 3s ease-in-out infinite;
 }
+
