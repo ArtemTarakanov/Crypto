@@ -53,23 +53,23 @@ export default function Header(){
                     <ul className = "flex flex-col items-center gap-3 font-source-sans-pro font-normal text-lg leading-7 text-[#ADB3BF] w-full md:hidden mt-4">
                         <li>Market</li>
 
-                        <div className = "h-[0.2px] bg-gray-400 w-90 "></div>
+                        <div className = "h-[0.2px] bg-gray-400 w-75 "></div>
 
                         <li>Trade</li>
 
-                        <div className = "h-[0.2px] bg-gray-400 w-90"></div>
+                        <div className = "h-[0.2px] bg-gray-400 w-75"></div>
 
                         <li>Earn</li>
 
-                        <div className = "h-[0.2px] bg-gray-400 w-90"></div>
+                        <div className = "h-[0.2px] bg-gray-400 w-75"></div>
 
                         <li>About</li>
 
-                        <div className = "h-[0.2px] bg-gray-400 w-90"></div>
+                        <div className = "h-[0.2px] bg-gray-400 w-75"></div>
 
                         <li>Career</li>
 
-                        <div className = "h-[0.2px] bg-gray-400 w-90"></div>
+                        <div className = "h-[0.2px] bg-gray-400 w-75"></div>
                     </ul>
 
                     <div className = "flex flex-col items-center gap-3 w-full mb-5">
