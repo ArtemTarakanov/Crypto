@@ -81,7 +81,7 @@ export default function CurrencyTicker() {
                         <div key={currency.id} className="flex flex-col bg-white/5 rounded-lg px-4 py-3 backdrop-blur-sm max-md:max-w-40 max-md:items-center">
 
                             <div className="flex items-center justify-between gap-4 max-md:flex max-md:flex-col max-md:gap-1 ">
-                                <div className="flex items-center gap-3 max-md:order-2">
+                                <div className="flex items-center gap-2 max-md:order-2">
                                     <span className="text-white font-bold text-lg">{currency.symbol}</span>
                                     <span className="text-white font-source-sans-pro text-base font-medium">
                                         {currency.name}
@@ -98,11 +98,10 @@ export default function CurrencyTicker() {
                             </div>
 
 
-                            <div className="mt-2">
-                                <span className="text-gray-300 font-source-sans-pro text-sm">
+                                <span className="text-gray-300 font-source-sans-pro text-sm mt-1">
                                     ₽{currency.price.toLocaleString('ru-RU')}
                                 </span>
-                            </div>
+
                         </div>
                     ))}
                 </div>
