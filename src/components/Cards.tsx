@@ -59,7 +59,7 @@ export default function Cards(){
                             initial={{opacity:0, y:30}}
                             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                             transition={{duration:0.8, delay: index*0.15}}
-                            key={index} className = "flex flex-col items-center bg-[#272A34] max-w-[clamp(16rem,85%,21.25rem)] max-h-[clamp(12rem,90vh,22.5rem)] rounded-[10px] px-4 py-10 animate-fade ">
+                            key={index} className = "flex flex-col items-center bg-[#272A34] max-w-[clamp(16rem,85%,21.25rem)] max-h-[clamp(12rem,90vh,22.5rem)] rounded-[10px] px-4 py-10  ">
                             <img src={item.icon} alt="icon" className = "max-w-15.5 max-h-15.5 mb-4"/>
                             <h1 className = "font-source-sans-pro font-semibold text-2xl leading-9 text-center text-white mb-3">{item.title}</h1>
                             <p className = "font-source-sans-pro font-normal text-base leading-6 text-center text-[#ADB3BF]">{item.description}</p>
