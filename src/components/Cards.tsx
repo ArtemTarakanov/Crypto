@@ -29,7 +29,7 @@ export default function Cards(){
     ]
 
     const {ref, inView} = useInView({
-        threshold: 0.3,
+        threshold: 0.5,
         triggerOnce: true
     });
 
