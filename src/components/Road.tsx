@@ -29,16 +29,15 @@ export default function Road(){
     ]
 
     const {ref, inView} = useInView({
-        threshold: 0.2,
-        triggerOnce: true
+        threshold: 0.2
     });
 
     return(
-        <section className = "bg-[url('/images/ellipse.svg')] bg-[#131517] min-h-200 flex items-center justify-center py-35 max-md:px-4 max-md:py-12">
+        <section className = "bg-[url('/images/ellipse.svg')] bg-[#131517] min-h-200 flex items-center justify-center py-35 max-md:px-3 max-md:py-10">
 
             <div className = "flex flex-col items-center justify-center">
 
-                <img src="/images/road.svg" alt="road" className = "float md:hidden max-md:mb-12 max-md:max-w-80 max-md:max-h-80"/>
+                <img src="/images/road.svg" alt="road" className = "float md:hidden max-md:mb-12 max-md:max-w-56 max-md:max-h-56"/>
 
                 <motion.div ref = {ref}
                      animate={inView?{opacity:1, y:0}:{opacity:0, y:30}}
@@ -59,21 +58,21 @@ export default function Road(){
                 </svg>
 
 
-                <div className = "flex flex-row gap-40 max-md:flex max-md:flex-col">
+                <div className = "flex flex-row gap-33 max-md:flex max-md:flex-col">
 
-                    <div ref = {ref} className = "flex flex-col items-center gap-20 max-md:gap-12 max-md:w-full">
+                    <div ref = {ref} className = "flex flex-col items-center gap-17 max-md:gap-10 max-md:w-full">
                         {cards.map((item, index)=>(
                             <motion.div
                                 animate={inView?{opacity:1, y:0}:{opacity:0, y:30}}
                                 transition={{duration:0.6, delay: index*0.1}}
                                 key={index} 
-                                className = "flex flex-row gap-5 items-center max-md:w-full max-md:bg-white/5 max-md:rounded-lg max-md:px-4 max-md:py-5 max-md:backdrop-blur-sm"
+                                className = "flex flex-row gap-5 items-center max-md:w-full max-md:max-w-88 max-md:bg-white/5 max-md:rounded-lg max-md:px-4 max-md:py-5 max-md:backdrop-blur-sm"
                             >
                                 <span className = "font-source-sans-pro font-bold text-[58px] text-[#272A34] max-md:text-[#1B70F1] max-md:min-w-14">{item.number}</span>
 
                                 <div className = "flex flex-col gap-3">
                                     <h2 className = "font-source-sans-pro font-semibold text-2xl leading-9 text-[#ADB3BF]">{item.title}</h2>
-                                    <p className = "font-source-sans-pro font-normal text-base leading-6 text-[#808A9A] max-w-110">{item.description}</p>
+                                    <p className = "font-source-sans-pro font-normal text-base leading-6 text-[#808A9A] max-w-77">{item.description}</p>
                                 </div>
                             </motion.div>
                         ))}
