@@ -36,7 +36,7 @@ export default function Footer() {
                         <p className="font-source-sans-pro font-normal text-base max-md:text-sm text-[#ADB3BF] max-w-60">Your trusted platform for cryptocurrency trading and investment.</p>
                     </div>
 
-                    <div className="grid md:flex md:flex-row gap-8 max-md:gap-6 w-full md:flex-1 max-md:grid-cols-2">
+                    <div className="grid md:flex md:flex-row justify-center gap-8 max-md:gap-6 w-full md:flex-1 max-md:grid-cols-2">
                         <div className="flex flex-col gap-4 max-md:text-center max-md:items-center">
                             <h4 className="font-source-sans-pro font-semibold text-lg max-md:text-base text-white">Quick Links</h4>
                             <ul className="flex flex-col gap-2 font-source-sans-pro text-base max-md:text-sm text-[#ADB3BF]">
