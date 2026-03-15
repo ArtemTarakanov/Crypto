@@ -35,7 +35,7 @@ export default function Header(){
                 <li><a href="#trade">Trade</a></li>
                 <li><a href="#earn">Earn</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#career">Career</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
             
             <div className = "flex flex-row gap-2.5 max-md:hidden">
