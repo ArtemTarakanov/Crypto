@@ -42,19 +42,17 @@ export default function Slider() {
     const prevSlide = () => setCurrent(current === 0 ? slides.length - 1 : current - 1);
     
     return(
-        <section className="w-full flex flex-col items-center gap-8">
-            {/* Контейнер с анимацией */}
+        <div className="w-full flex flex-col items-center gap-8">
             <div className="relative w-full overflow-hidden">
                 <div
-                    className="transition-transform duration-500 ease-in-out"
+                    className="flex transition-transform duration-500 ease-in-out"
                     style={{
                         transform: `translateX(-${current * 100}%)`,
                     }}
                 >
-                    <div className="flex">
-                        {slides.map((slide) => (
-                            <div key={slide.id} className="w-full flex-shrink-0 flex justify-center">
-                                <div className="bg-[#272A34] py-10 px-7.5 max-w-160 flex flex-col gap-8 rounded-lg max-md:py-8 max-md:px-5 max-md:max-w-90 max-md:gap-6">
+                    {slides.map((slide) => (
+                        <div key={slide.id} className="w-full min-w-full flex justify-center flex-shrink-0">
+                            <div className="bg-[#272A34] py-10 px-7.5 max-w-133 flex flex-col gap-8 rounded-lg max-md:py-8 max-md:px-5 max-md:max-w-75 max-md:gap-6">
                                     <div className="flex flex-row justify-between max-md:justify-center">
                                         <span className="flex flex-row items-center gap-5">
                                             <img src={slide.icon} alt="icon" className="max-w-18 max-h-18" />
@@ -66,13 +64,12 @@ export default function Slider() {
                                         <img src={slide.citate} alt="citate" className="max-w-18 max-h-18 max-md:hidden"/>
                                     </div>
 
-                                    <div className="flex">
-                                        <p className="font-source-sans-pro font-normal text-2xl leading-9 text-white max-md:text-base max-md:max-w-100 max-md:text-center">{slide.description}</p>
-                                    </div>
-                                </div>
+                            <div className="flex">
+                                <p className="font-source-sans-pro font-normal text-2xl leading-9 text-white max-md:text-base max-md:max-w-83 max-md:text-center">{slide.description}</p>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                        </div>
+                    ))}
                 </div>
             </div>
 
@@ -102,6 +99,6 @@ export default function Slider() {
 
                 </button>
             </div>
-        </section>
+        </div>
     );
 }
