@@ -71,24 +71,24 @@ export default function CurrencyTicker() {
     }, []);
 
     return (
-        <div className="flex items-center justify-between max-w-7xl mx-auto max-md:mt-10">
+        <div className="flex items-center justify-center w-full max-w-7xl mx-auto mt-12 max-md:mt-10 max-md:px-4 max-md:overflow-x-auto max-md:hide-scrollbar">
             {loading ? (
                 <div className="text-white">Загрузка курсов...</div>
             ) : (
-                <div className="flex items-center gap-25 max-md:grid max-md:grid-cols-2 max-md:gap-8">
+                <div className="flex items-center justify-center gap-6 max-md:gap-3 overflow-x-auto w-full hide-scrollbar">
 
                     {currencies.map((currency) => (
-                        <div key={currency.id} className="flex flex-col bg-white/5 rounded-lg px-4 py-3 backdrop-blur-sm max-md:max-w-40 max-md:items-center">
+                        <div key={currency.id} className="flex flex-col bg-white/5 rounded-lg px-4 py-3 backdrop-blur-sm flex-shrink-0">
 
-                            <div className="flex items-center justify-between gap-4 max-md:flex max-md:flex-col max-md:gap-1 ">
-                                <div className="flex items-center gap-2 max-md:order-2">
+                            <div className="flex items-center justify-between gap-4">
+                                <div className="flex items-center gap-2">
                                     <span className="text-white font-bold text-lg">{currency.symbol}</span>
-                                    <span className="text-white font-source-sans-pro text-base font-medium">
+                                    <span className="text-white font-source-sans-pro text-sm font-medium">
                                         {currency.name}
                                     </span>
                                 </div>
 
-                                <span className={`text-sm font-semibold px-2 py-1 rounded ${
+                                <span className={`text-xs font-semibold px-2 py-1 rounded font-source-sans-pro ${
                                     currency.change >= 0
                                         ? 'text-green-400 bg-green-400/10'
                                         : 'text-red-400 bg-red-400/10'
@@ -98,7 +98,7 @@ export default function CurrencyTicker() {
                             </div>
 
 
-                                <span className="text-gray-300 font-source-sans-pro text-sm mt-1">
+                                <span className="text-gray-300 font-source-sans-pro text-xs mt-1">
                                     ₽{currency.price.toLocaleString('ru-RU')}
                                 </span>
 
