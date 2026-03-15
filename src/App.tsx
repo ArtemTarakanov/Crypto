@@ -10,10 +10,18 @@ function App() {
   return (
     <>
         <Header/>
-        <Hero/>
-        <Cards/>
-        <Road/>
-        <AboutUs/>
+        <section id="hero">
+            <Hero/>
+        </section>
+        <section id="trade">
+            <Cards/>
+        </section>
+        <section id="earn">
+            <Road/>
+        </section>
+        <section id="about">
+            <AboutUs/>
+        </section>
     </>
   )
 }
