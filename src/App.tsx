@@ -4,6 +4,8 @@ import Hero from "./components/Hero.tsx";
 import Cards from "./components/Cards.tsx";
 import Road from "./components/Road.tsx";
 import AboutUs from "./components/AboutUs.tsx";
+import Faq from "./components/Faq.tsx";
+import Footer from "./components/Footer.tsx";
 
 function App() {
 
@@ -22,6 +24,10 @@ function App() {
         <section id="about">
             <AboutUs/>
         </section>
+        <section id="faq">
+            <Faq/>
+        </section>
+        <Footer/>
     </>
   )
 }
