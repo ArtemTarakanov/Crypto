@@ -54,7 +54,7 @@ export default function Slider() {
                     <div className="flex">
                         {slides.map((slide) => (
                             <div key={slide.id} className="w-full flex-shrink-0 flex justify-center">
-                                <div className="bg-[#272A34] py-10 px-7.5 max-w-160 flex flex-col gap-8 rounded-lg max-md:py-8 max-md:px-5 max-md:max-w-100 max-md:gap-6">
+                                <div className="bg-[#272A34] py-10 px-7.5 max-w-160 flex flex-col gap-8 rounded-lg max-md:py-8 max-md:px-5 max-md:max-w-90 max-md:gap-6">
                                     <div className="flex flex-row justify-between max-md:justify-center">
                                         <span className="flex flex-row items-center gap-5">
                                             <img src={slide.icon} alt="icon" className="max-w-18 max-h-18" />
@@ -67,7 +67,7 @@ export default function Slider() {
                                     </div>
 
                                     <div className="flex">
-                                        <p className="font-source-sans-pro font-normal text-2xl leading-9 text-white max-md:text-lg max-md:max-w-100 max-md:text-center">{slide.description}</p>
+                                        <p className="font-source-sans-pro font-normal text-2xl leading-9 text-white max-md:text-base max-md:max-w-100 max-md:text-center">{slide.description}</p>
                                     </div>
                                 </div>
                             </div>
